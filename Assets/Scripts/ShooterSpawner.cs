@@ -11,6 +11,7 @@ public class ShooterSpawner : MonoBehaviour
     public int CurrentThrowIndex;
     public int NumberOfProjectile,NumberOfBomb;
     public bool HavePragagamatre;
+    public AnimationCurve Curve;
     // Start is called before the first frame update
     void Start()
     {

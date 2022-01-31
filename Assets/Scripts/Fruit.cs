@@ -8,7 +8,7 @@ public class Fruit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<SpriteRenderer>().color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
     }
 
     // Update is called once per frame
@@ -31,6 +31,6 @@ public class Fruit : MonoBehaviour
     }
     void SpawnDeathEffect()
     {
-        Instantiate(DeathEffect, transform.position, Quaternion.identity);
+        Instantiate(DeathEffect, transform.position+Vector3.up, Quaternion.identity);
     }
 }
